@@ -1,0 +1,20 @@
+include<stdio.h>
+int main()
+{
+	int i,f1,f2,f3,n;
+	printf("enter the range: \n");
+	f1=0;
+	f2=1;
+	scanf("%d",&n);
+	printf("the fibonacci series is: \n");
+	printf("%d\t",f1);
+	printf("%d\t",f2);
+	for(int i=2;i<n;i++){
+		f3=f2+f1;
+		f1=f2;
+		f2=f3;
+		printf("%d\t",f3);
+	}
+	printf("\n");
+	return 0;
+}
